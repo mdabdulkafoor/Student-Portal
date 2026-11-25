@@ -1,0 +1,1051 @@
+// Seed data for the Student Portal
+
+export const initialData = {
+  users: [
+    {
+      id: "usr_student_1",
+      username: "2022CS1042",
+      studentId: "STU2022001",
+      email: "alex.morgan@apexuniv.edu",
+      password: "student123", // in production hashed
+      role: "student",
+      name: "Alex Morgan"
+    },
+    {
+      id: "usr_student_2",
+      username: "2022CS1043",
+      studentId: "STU2022002",
+      email: "priya.sharma@apexuniv.edu",
+      password: "student123",
+      role: "student",
+      name: "Priya Sharma"
+    },
+    {
+      id: "usr_faculty_1",
+      username: "FAC-CS-101",
+      facultyId: "FAC101",
+      email: "sarah.jenkins@apexuniv.edu",
+      password: "faculty123",
+      role: "faculty",
+      name: "Dr. Sarah Jenkins"
+    },
+    {
+      id: "usr_faculty_2",
+      username: "FAC-CS-102",
+      facultyId: "FAC102",
+      email: "david.chen@apexuniv.edu",
+      password: "faculty123",
+      role: "faculty",
+      name: "Prof. David Chen"
+    },
+    {
+      id: "usr_admin_1",
+      username: "admin",
+      email: "admin@apexuniv.edu",
+      password: "admin123",
+      role: "admin",
+      name: "Dean Arthur Sterling"
+    }
+  ],
+
+  students: [
+    {
+      id: "STU2022001",
+      userId: "usr_student_1",
+      registerNo: "2022CS1042",
+      name: "Alex Morgan",
+      email: "alex.morgan@apexuniv.edu",
+      phone: "+1 (555) 234-5678",
+      altPhone: "+1 (555) 234-5699",
+      dob: "2003-08-14",
+      gender: "Male",
+      bloodGroup: "O+",
+      address: "452 University Avenue, Tech Corridor, Silicon Valley, CA 94025",
+      photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      department: "Computer Science & Engineering",
+      deptCode: "CSE",
+      program: "Bachelor of Technology (B.Tech)",
+      year: "3rd Year",
+      semester: "Semester 5",
+      section: "A",
+      rollNo: "42",
+      academicYear: "2024 - 2025",
+      admissionDate: "2022-08-10",
+      batch: "2022 - 2026",
+      cgpa: 8.92,
+      totalCredits: 104,
+      attendanceOverall: 88.4,
+      advisor: "Dr. Sarah Jenkins",
+      parent: {
+        fatherName: "Robert Morgan",
+        fatherOccupation: "Chief Software Architect",
+        motherName: "Claire Morgan",
+        motherOccupation: "Clinical Director",
+        guardianPhone: "+1 (555) 987-6543",
+        guardianEmail: "robert.m@gmail.com",
+        emergencyContact: "+1 (555) 987-6543",
+        homeAddress: "452 University Avenue, Tech Corridor, Silicon Valley, CA 94025"
+      }
+    },
+    {
+      id: "STU2022002",
+      userId: "usr_student_2",
+      registerNo: "2022CS1043",
+      name: "Priya Sharma",
+      email: "priya.sharma@apexuniv.edu",
+      phone: "+1 (555) 345-6711",
+      altPhone: "+1 (555) 345-6722",
+      dob: "2003-11-20",
+      gender: "Female",
+      bloodGroup: "B+",
+      address: "108 Innovation Way, Palo Alto, CA 94301",
+      photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+      department: "Computer Science & Engineering",
+      deptCode: "CSE",
+      program: "Bachelor of Technology (B.Tech)",
+      year: "3rd Year",
+      semester: "Semester 5",
+      section: "A",
+      rollNo: "43",
+      academicYear: "2024 - 2025",
+      admissionDate: "2022-08-10",
+      batch: "2022 - 2026",
+      cgpa: 9.15,
+      totalCredits: 104,
+      attendanceOverall: 93.2,
+      advisor: "Dr. Sarah Jenkins",
+      parent: {
+        fatherName: "Sanjay Sharma",
+        fatherOccupation: "Biomedical Engineer",
+        motherName: "Ananya Sharma",
+        motherOccupation: "Professor of Chemistry",
+        guardianPhone: "+1 (555) 789-1234",
+        guardianEmail: "sanjay.sharma@gmail.com",
+        emergencyContact: "+1 (555) 789-1234",
+        homeAddress: "108 Innovation Way, Palo Alto, CA 94301"
+      }
+    },
+    {
+      id: "STU2022003",
+      userId: "usr_student_3",
+      registerNo: "2022EC1021",
+      name: "Marcus Vance",
+      email: "marcus.vance@apexuniv.edu",
+      phone: "+1 (555) 456-7892",
+      altPhone: "+1 (555) 456-7893",
+      dob: "2003-04-18",
+      gender: "Male",
+      bloodGroup: "A+",
+      address: "74 Oakridge Blvd, Berkeley, CA",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      department: "Electronics & Communication",
+      deptCode: "ECE",
+      program: "Bachelor of Technology (B.Tech)",
+      year: "3rd Year",
+      semester: "Semester 5",
+      section: "B",
+      rollNo: "21",
+      academicYear: "2024 - 2025",
+      admissionDate: "2022-08-10",
+      batch: "2022 - 2026",
+      cgpa: 7.84,
+      totalCredits: 104,
+      attendanceOverall: 81.5,
+      advisor: "Prof. David Chen",
+      parent: {
+        fatherName: "Thomas Vance",
+        fatherOccupation: "Financial Analyst",
+        motherName: "Laura Vance",
+        motherOccupation: "Architect",
+        guardianPhone: "+1 (555) 654-9871",
+        guardianEmail: "tvance@gmail.com",
+        emergencyContact: "+1 (555) 654-9871",
+        homeAddress: "74 Oakridge Blvd, Berkeley, CA"
+      }
+    }
+  ],
+
+  faculty: [
+    {
+      id: "FAC101",
+      userId: "usr_faculty_1",
+      code: "FAC-CS-101",
+      name: "Dr. Sarah Jenkins",
+      email: "sarah.jenkins@apexuniv.edu",
+      designation: "Professor & Head of Department",
+      department: "Computer Science & Engineering",
+      deptCode: "CSE",
+      phone: "+1 (555) 345-6789",
+      qualification: "Ph.D. in Computer Science (MIT), M.S. (Stanford)",
+      specialization: "Distributed Systems, Cloud Architecture & Machine Learning",
+      office: "Engineering Block A, Room 405",
+      officeHours: "Mon/Wed 2:00 PM - 4:00 PM",
+      photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      assignedCourses: ["CS501", "CS503", "CS506"],
+      experience: "14 Years Teaching & Research"
+    },
+    {
+      id: "FAC102",
+      userId: "usr_faculty_2",
+      code: "FAC-CS-102",
+      name: "Prof. David Chen",
+      email: "david.chen@apexuniv.edu",
+      designation: "Associate Professor",
+      department: "Computer Science & Engineering",
+      deptCode: "CSE",
+      phone: "+1 (555) 456-7890",
+      qualification: "M.S. in Computer Engineering (UC Berkeley)",
+      specialization: "Computer Networks, Network Security & DevOps",
+      office: "Engineering Block A, Room 312",
+      officeHours: "Tue/Thu 1:00 PM - 3:00 PM",
+      photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+      assignedCourses: ["CS502", "CS504"],
+      experience: "9 Years Industry & Academia"
+    }
+  ],
+
+  departments: [
+    { id: "dept_cse", code: "CSE", name: "Computer Science & Engineering", head: "Dr. Sarah Jenkins", studentsCount: 420, facultyCount: 28, established: 2004 },
+    { id: "dept_ece", code: "ECE", name: "Electronics & Communication", head: "Dr. Gregory Miller", studentsCount: 360, facultyCount: 24, established: 2004 },
+    { id: "dept_it", code: "IT", name: "Information Technology", head: "Dr. Rebecca Sterling", studentsCount: 310, facultyCount: 20, established: 2008 },
+    { id: "dept_me", code: "ME", name: "Mechanical Engineering", head: "Dr. James Thornton", studentsCount: 280, facultyCount: 19, established: 2005 },
+    { id: "dept_ce", code: "CE", name: "Civil Engineering", head: "Dr. Maria Rodriguez", studentsCount: 240, facultyCount: 16, established: 2006 }
+  ],
+
+  courses: [
+    {
+      code: "CS501",
+      name: "Advanced Database Management Systems",
+      credits: 4,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      room: "Hall 302",
+      type: "Theory"
+    },
+    {
+      code: "CS502",
+      name: "Cloud Computing & Microservices",
+      credits: 4,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC102",
+      facultyName: "Prof. David Chen",
+      room: "Hall 304",
+      type: "Theory"
+    },
+    {
+      code: "CS503",
+      name: "Artificial Intelligence & Machine Learning",
+      credits: 3,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      room: "Hall 302",
+      type: "Theory"
+    },
+    {
+      code: "CS504",
+      name: "Computer Networks & Security",
+      credits: 3,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC102",
+      facultyName: "Prof. David Chen",
+      room: "Hall 305",
+      type: "Theory"
+    },
+    {
+      code: "CS505",
+      name: "Software Engineering & Agile Methodology",
+      credits: 3,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC101",
+      facultyName: "Dr. Alan Wright",
+      room: "Hall 301",
+      type: "Theory"
+    },
+    {
+      code: "CS506",
+      name: "Cloud & AI Practical Laboratory",
+      credits: 2,
+      department: "CSE",
+      semester: "Semester 5",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      room: "Turing Computing Lab 2",
+      type: "Practical"
+    }
+  ],
+
+  // Subject-wise attendance records for Alex Morgan (STU2022001)
+  attendance: {
+    "STU2022001": [
+      { courseCode: "CS501", courseName: "Advanced Database Management Systems", totalClasses: 42, attendedClasses: 38, percentage: 90.5, status: "Normal" },
+      { courseCode: "CS502", courseName: "Cloud Computing & Microservices", totalClasses: 40, attendedClasses: 35, percentage: 87.5, status: "Normal" },
+      { courseCode: "CS503", courseName: "Artificial Intelligence & Machine Learning", totalClasses: 36, attendedClasses: 32, percentage: 88.9, status: "Normal" },
+      { courseCode: "CS504", courseName: "Computer Networks & Security", totalClasses: 38, attendedClasses: 30, percentage: 78.9, status: "Warning" },
+      { courseCode: "CS505", courseName: "Software Engineering & Agile Methodology", totalClasses: 34, attendedClasses: 29, percentage: 85.3, status: "Normal" },
+      { courseCode: "CS506", courseName: "Cloud & AI Practical Laboratory", totalClasses: 18, attendedClasses: 18, percentage: 100.0, status: "Excellent" }
+    ],
+    "STU2022002": [
+      { courseCode: "CS501", courseName: "Advanced Database Management Systems", totalClasses: 42, attendedClasses: 40, percentage: 95.2, status: "Excellent" },
+      { courseCode: "CS502", courseName: "Cloud Computing & Microservices", totalClasses: 40, attendedClasses: 38, percentage: 95.0, status: "Excellent" },
+      { courseCode: "CS503", courseName: "Artificial Intelligence & Machine Learning", totalClasses: 36, attendedClasses: 34, percentage: 94.4, status: "Excellent" },
+      { courseCode: "CS504", courseName: "Computer Networks & Security", totalClasses: 38, attendedClasses: 33, percentage: 86.8, status: "Normal" },
+      { courseCode: "CS505", courseName: "Software Engineering & Agile Methodology", totalClasses: 34, attendedClasses: 31, percentage: 91.2, status: "Normal" },
+      { courseCode: "CS506", courseName: "Cloud & AI Practical Laboratory", totalClasses: 18, attendedClasses: 18, percentage: 100.0, status: "Excellent" }
+    ]
+  },
+
+  // Detailed day-by-day attendance logs
+  attendanceLogs: [
+    { id: "att_1", studentId: "STU2022001", date: "2026-11-20", courseCode: "CS501", slot: "09:00 - 10:00", status: "Present", faculty: "Dr. Sarah Jenkins" },
+    { id: "att_2", studentId: "STU2022001", date: "2026-11-20", courseCode: "CS502", slot: "10:00 - 11:00", status: "Present", faculty: "Prof. David Chen" },
+    { id: "att_3", studentId: "STU2022001", date: "2026-11-20", courseCode: "CS503", slot: "11:15 - 12:15", status: "Present", faculty: "Dr. Sarah Jenkins" },
+    { id: "att_4", studentId: "STU2022001", date: "2026-11-19", courseCode: "CS504", slot: "09:00 - 10:00", status: "Absent", faculty: "Prof. David Chen" },
+    { id: "att_5", studentId: "STU2022001", date: "2026-11-19", courseCode: "CS505", slot: "10:00 - 11:00", status: "Present", faculty: "Dr. Alan Wright" },
+    { id: "att_6", studentId: "STU2022001", date: "2026-11-19", courseCode: "CS506", slot: "02:00 - 04:00", status: "Present", faculty: "Dr. Sarah Jenkins" },
+    { id: "att_7", studentId: "STU2022001", date: "2026-11-18", courseCode: "CS501", slot: "09:00 - 10:00", status: "Present", faculty: "Dr. Sarah Jenkins" },
+    { id: "att_8", studentId: "STU2022001", date: "2026-11-18", courseCode: "CS502", slot: "11:15 - 12:15", status: "Present", faculty: "Prof. David Chen" },
+    { id: "att_9", studentId: "STU2022001", date: "2026-11-17", courseCode: "CS503", slot: "09:00 - 10:00", status: "Present", faculty: "Dr. Sarah Jenkins" },
+    { id: "att_10", studentId: "STU2022001", date: "2026-11-17", courseCode: "CS504", slot: "10:00 - 11:00", status: "Absent", faculty: "Prof. David Chen" }
+  ],
+
+  // Academic Results for Semesters
+  results: {
+    "STU2022001": [
+      {
+        semester: "Semester 5",
+        status: "Published (Mid-Term Assessment)",
+        publishedDate: "2026-11-10",
+        gpa: 8.95,
+        totalCredits: 19,
+        creditsEarned: 19,
+        subjects: [
+          { code: "CS501", name: "Advanced Database Management Systems", internal: 38, external: 52, total: 90, grade: "O", gradePoint: 10, credits: 4, remarks: "Outstanding" },
+          { code: "CS502", name: "Cloud Computing & Microservices", internal: 35, external: 51, total: 86, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS503", name: "Artificial Intelligence & Machine Learning", internal: 36, external: 54, total: 90, grade: "O", gradePoint: 10, credits: 3, remarks: "Outstanding" },
+          { code: "CS504", name: "Computer Networks & Security", internal: 32, external: 48, total: 80, grade: "A", gradePoint: 8, credits: 3, remarks: "Very Good" },
+          { code: "CS505", name: "Software Engineering & Agile Methodology", internal: 34, external: 50, total: 84, grade: "A+", gradePoint: 9, credits: 3, remarks: "Excellent" },
+          { code: "CS506", name: "Cloud & AI Practical Laboratory", internal: 39, external: 58, total: 97, grade: "O", gradePoint: 10, credits: 2, remarks: "Outstanding" }
+        ]
+      },
+      {
+        semester: "Semester 4",
+        status: "Finalized",
+        publishedDate: "2026-06-25",
+        gpa: 9.05,
+        totalCredits: 22,
+        creditsEarned: 22,
+        subjects: [
+          { code: "CS401", name: "Design & Analysis of Algorithms", internal: 37, external: 55, total: 92, grade: "O", gradePoint: 10, credits: 4, remarks: "Outstanding" },
+          { code: "CS402", name: "Operating Systems Architecture", internal: 36, external: 52, total: 88, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS403", name: "Theory of Computation", internal: 34, external: 52, total: 86, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS404", name: "Microprocessors & Interfacing", internal: 33, external: 49, total: 82, grade: "A", gradePoint: 8, credits: 3, remarks: "Very Good" },
+          { code: "CS405", name: "Object Oriented Programming (Java)", internal: 39, external: 56, total: 95, grade: "O", gradePoint: 10, credits: 4, remarks: "Outstanding" },
+          { code: "CS406", name: "OS & Microprocessor Lab", internal: 38, external: 56, total: 94, grade: "O", gradePoint: 10, credits: 3, remarks: "Outstanding" }
+        ]
+      },
+      {
+        semester: "Semester 3",
+        status: "Finalized",
+        publishedDate: "2025-12-20",
+        gpa: 8.85,
+        totalCredits: 21,
+        creditsEarned: 21,
+        subjects: [
+          { code: "CS301", name: "Data Structures & Applications", internal: 38, external: 53, total: 91, grade: "O", gradePoint: 10, credits: 4, remarks: "Outstanding" },
+          { code: "CS302", name: "Digital Logic & Computer Design", internal: 34, external: 49, total: 83, grade: "A", gradePoint: 8, credits: 4, remarks: "Very Good" },
+          { code: "CS303", name: "Discrete Mathematical Structures", internal: 35, external: 50, total: 85, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS304", name: "Computer Organization & Architecture", internal: 33, external: 48, total: 81, grade: "A", gradePoint: 8, credits: 3, remarks: "Very Good" },
+          { code: "CS305", name: "Data Structures Lab using C++", internal: 39, external: 57, total: 96, grade: "O", gradePoint: 10, credits: 3, remarks: "Outstanding" },
+          { code: "CS306", name: "Environmental Science & Sustainability", internal: 37, external: 51, total: 88, grade: "A+", gradePoint: 9, credits: 3, remarks: "Excellent" }
+        ]
+      },
+      {
+        semester: "Semester 2",
+        status: "Finalized",
+        publishedDate: "2025-06-18",
+        gpa: 8.80,
+        totalCredits: 21,
+        creditsEarned: 21,
+        subjects: [
+          { code: "MA201", name: "Linear Algebra & Calculus II", internal: 36, external: 50, total: 86, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "PH201", name: "Applied Physics for Engineers", internal: 35, external: 48, total: 83, grade: "A", gradePoint: 8, credits: 4, remarks: "Very Good" },
+          { code: "EE201", name: "Basic Electrical & Electronics", internal: 36, external: 51, total: 87, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS201", name: "Problem Solving with Python", internal: 39, external: 56, total: 95, grade: "O", gradePoint: 10, credits: 4, remarks: "Outstanding" },
+          { code: "CS202", name: "Python Programming Lab", internal: 40, external: 58, total: 98, grade: "O", gradePoint: 10, credits: 2, remarks: "Outstanding" },
+          { code: "EN201", name: "Professional Communication Skills", internal: 36, external: 50, total: 86, grade: "A+", gradePoint: 9, credits: 3, remarks: "Excellent" }
+        ]
+      },
+      {
+        semester: "Semester 1",
+        status: "Finalized",
+        publishedDate: "2024-12-22",
+        gpa: 8.70,
+        totalCredits: 21,
+        creditsEarned: 21,
+        subjects: [
+          { code: "MA101", name: "Engineering Mathematics I", internal: 34, external: 48, total: 82, grade: "A", gradePoint: 8, credits: 4, remarks: "Very Good" },
+          { code: "CH101", name: "Engineering Chemistry & Materials", internal: 35, external: 49, total: 84, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS101", name: "Foundations of Computer Systems", internal: 37, external: 52, total: 89, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "ME101", name: "Engineering Graphics & Design", internal: 38, external: 50, total: 88, grade: "A+", gradePoint: 9, credits: 4, remarks: "Excellent" },
+          { code: "CS102", name: "C Programming & Problem Solving", internal: 38, external: 54, total: 92, grade: "O", gradePoint: 10, credits: 3, remarks: "Outstanding" },
+          { code: "WS101", name: "Engineering Workshop Practice", internal: 36, external: 52, total: 88, grade: "A+", gradePoint: 9, credits: 2, remarks: "Excellent" }
+        ]
+      }
+    ]
+  },
+
+  // Daily Timetable
+  timetable: {
+    "Monday": [
+      { id: "tt_mon_1", time: "09:00 AM - 10:00 AM", courseCode: "CS501", courseName: "Advanced DBMS", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Lecture", status: "Completed" },
+      { id: "tt_mon_2", time: "10:00 AM - 11:00 AM", courseCode: "CS502", courseName: "Cloud Computing", faculty: "Prof. David Chen", room: "Hall 304", type: "Lecture", status: "Live" },
+      { id: "tt_mon_3", time: "11:15 AM - 12:15 PM", courseCode: "CS503", courseName: "Artificial Intelligence", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Lecture", status: "Upcoming" },
+      { id: "tt_mon_4", time: "12:15 PM - 01:15 PM", courseCode: "LUNCH", courseName: "Lunch Break", faculty: "Campus Cafeteria", room: "Student Center", type: "Break", status: "Upcoming" },
+      { id: "tt_mon_5", time: "01:30 PM - 03:30 PM", courseCode: "CS506", courseName: "Cloud & AI Lab", faculty: "Dr. Sarah Jenkins", room: "Turing Lab 2", type: "Lab", status: "Upcoming" }
+    ],
+    "Tuesday": [
+      { id: "tt_tue_1", time: "09:00 AM - 10:00 AM", courseCode: "CS504", courseName: "Computer Networks & Security", faculty: "Prof. David Chen", room: "Hall 305", type: "Lecture", status: "Scheduled" },
+      { id: "tt_tue_2", time: "10:00 AM - 11:00 AM", courseCode: "CS505", courseName: "Software Engineering & Agile", faculty: "Dr. Alan Wright", room: "Hall 301", type: "Lecture", status: "Scheduled" },
+      { id: "tt_tue_3", time: "11:15 AM - 12:15 PM", courseCode: "CS501", courseName: "Advanced DBMS (Tutorial)", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Tutorial", status: "Scheduled" },
+      { id: "tt_tue_4", time: "01:30 PM - 03:00 PM", courseCode: "CS503", courseName: "Machine Learning Workshop", faculty: "Dr. Sarah Jenkins", room: "Auditorium B", type: "Seminar", status: "Scheduled" }
+    ],
+    "Wednesday": [
+      { id: "tt_wed_1", time: "09:00 AM - 10:00 AM", courseCode: "CS502", courseName: "Cloud Architecture", faculty: "Prof. David Chen", room: "Hall 304", type: "Lecture", status: "Scheduled" },
+      { id: "tt_wed_2", time: "10:00 AM - 11:00 AM", courseCode: "CS503", courseName: "Artificial Intelligence", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Lecture", status: "Scheduled" },
+      { id: "tt_wed_3", time: "11:15 AM - 12:15 PM", courseCode: "CS504", courseName: "Computer Networks & Security", faculty: "Prof. David Chen", room: "Hall 305", type: "Lecture", status: "Scheduled" },
+      { id: "tt_wed_4", time: "01:30 PM - 03:30 PM", courseCode: "CS506", courseName: "Network Security & Cloud Lab", faculty: "Prof. David Chen", room: "Cisco Lab 1", type: "Lab", status: "Scheduled" }
+    ],
+    "Thursday": [
+      { id: "tt_thu_1", time: "09:00 AM - 10:00 AM", courseCode: "CS505", courseName: "Software Engineering & Agile", faculty: "Dr. Alan Wright", room: "Hall 301", type: "Lecture", status: "Scheduled" },
+      { id: "tt_thu_2", time: "10:00 AM - 11:00 AM", courseCode: "CS501", courseName: "Advanced DBMS", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Lecture", status: "Scheduled" },
+      { id: "tt_thu_3", time: "11:15 AM - 12:15 PM", courseCode: "CS502", courseName: "Microservices & Kubernetes", faculty: "Prof. David Chen", room: "Hall 304", type: "Lecture", status: "Scheduled" },
+      { id: "tt_thu_4", time: "02:00 PM - 04:00 PM", courseCode: "PROJ5", courseName: "Capstone Project Mentorship", faculty: "Dr. Sarah Jenkins", room: "Project Lab", type: "Project", status: "Scheduled" }
+    ],
+    "Friday": [
+      { id: "tt_fri_1", time: "09:00 AM - 10:00 AM", courseCode: "CS503", courseName: "Deep Learning Foundations", faculty: "Dr. Sarah Jenkins", room: "Hall 302", type: "Lecture", status: "Scheduled" },
+      { id: "tt_fri_2", time: "10:00 AM - 11:00 AM", courseCode: "CS504", courseName: "Cybersecurity Protocols", faculty: "Prof. David Chen", room: "Hall 305", type: "Lecture", status: "Scheduled" },
+      { id: "tt_fri_3", time: "11:15 AM - 12:15 PM", courseCode: "CS505", courseName: "DevOps & CI/CD Pipelines", faculty: "Dr. Alan Wright", room: "Hall 301", type: "Lecture", status: "Scheduled" },
+      { id: "tt_fri_4", time: "02:00 PM - 03:30 PM", courseCode: "CLUB", courseName: "ACM & IEEE Student Chapter", faculty: "Faculty Coordinators", room: "Seminar Hall 1", type: "Activity", status: "Scheduled" }
+    ]
+  },
+
+  // Assignments
+  assignments: [
+    {
+      id: "asg_1",
+      courseCode: "CS502",
+      courseName: "Cloud Computing & Microservices",
+      title: "Microservices Deployment on Kubernetes Cluster",
+      description: "Implement a containerized 3-tier web application using Docker, construct Kubernetes deployment and service manifests with load balancing, and attach a documented architecture PDF.",
+      deadline: "2026-11-28T23:59:00Z",
+      maxMarks: 20,
+      facultyName: "Prof. David Chen",
+      facultyId: "FAC102",
+      submissions: [
+        {
+          studentId: "STU2022001",
+          studentName: "Alex Morgan",
+          submittedAt: "2026-11-22T14:30:00Z",
+          fileName: "Alex_Morgan_CS502_K8s_Project.pdf",
+          fileUrl: "/uploads/Alex_Morgan_CS502_K8s_Project.pdf",
+          status: "Submitted",
+          grade: null,
+          feedback: null
+        }
+      ]
+    },
+    {
+      id: "asg_2",
+      courseCode: "CS501",
+      courseName: "Advanced Database Management Systems",
+      title: "Query Optimization & B-Tree Index Analysis",
+      description: "Analyze query execution plans for complex joins over 1M records. Contrast clustered vs non-clustered indexing and evaluate execution timing before and after index tuning.",
+      deadline: "2026-11-18T23:59:00Z",
+      maxMarks: 20,
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      submissions: [
+        {
+          studentId: "STU2022001",
+          studentName: "Alex Morgan",
+          submittedAt: "2026-11-17T18:15:00Z",
+          fileName: "Alex_Morgan_DBMS_Index_Analysis.pdf",
+          fileUrl: "/uploads/Alex_Morgan_DBMS_Index_Analysis.pdf",
+          status: "Graded",
+          grade: 19,
+          feedback: "Exceptional comparative analysis and detailed EXPLAIN query plan graphs. Very well done."
+        }
+      ]
+    },
+    {
+      id: "asg_3",
+      courseCode: "CS503",
+      courseName: "Artificial Intelligence & Machine Learning",
+      title: "Neural Network Backpropagation from Scratch",
+      description: "Implement a 3-layer neural network with forward pass, cross-entropy loss, and backpropagation using only NumPy. Test on the MNIST handwritten digits dataset.",
+      deadline: "2026-12-05T23:59:00Z",
+      maxMarks: 25,
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      submissions: []
+    },
+    {
+      id: "asg_4",
+      courseCode: "CS504",
+      courseName: "Computer Networks & Security",
+      title: "Wireshark Packet Analysis & TLS Handshake Inspection",
+      description: "Capture and dissect packets during an HTTPS handshake. Explain Diffie-Hellman key exchange, cipher suite negotiation, and symmetric session key generation.",
+      deadline: "2026-11-14T23:59:00Z",
+      maxMarks: 20,
+      facultyName: "Prof. David Chen",
+      facultyId: "FAC102",
+      submissions: [
+        {
+          studentId: "STU2022001",
+          studentName: "Alex Morgan",
+          submittedAt: "2026-11-13T20:45:00Z",
+          fileName: "Alex_Morgan_Wireshark_TLS_Report.pdf",
+          fileUrl: "/uploads/Alex_Morgan_Wireshark_TLS_Report.pdf",
+          status: "Graded",
+          grade: 18.5,
+          feedback: "Great cryptographic breakdown and clear packet flow screenshots."
+        }
+      ]
+    }
+  ],
+
+  // Announcements
+  announcements: [
+    {
+      id: "ann_1",
+      title: "End-Semester Examination Schedule - Fall 2026",
+      category: "Examination",
+      priority: "Urgent",
+      date: "2026-11-21",
+      author: "Office of the Controller of Examinations",
+      department: "All Departments",
+      content: "The final theory examinations for all undergraduate programs will commence from December 14, 2026. Detailed subject-wise dates and hall allocations are available in the Examinations tab. Hall tickets will be released for download on December 5, 2026.",
+      attachment: "Fall_2026_Exam_Schedule.pdf"
+    },
+    {
+      id: "ann_2",
+      title: "Guest Lecture: 'Generative AI at Scale' by Google DeepMind",
+      category: "Department",
+      priority: "Normal",
+      date: "2026-11-19",
+      author: "Dr. Sarah Jenkins, HOD CSE",
+      department: "Computer Science & Engineering",
+      content: "The Department of CSE is pleased to invite all 3rd and 4th-year students to an exclusive guest lecture on Foundation Models and Autonomous Agents by Lead Research Scientists from Google DeepMind. Date: Nov 27, 2026, 10:30 AM at Dr. APJ Abdul Kalam Auditorium.",
+      attachment: "DeepMind_Lecture_Brochure.pdf"
+    },
+    {
+      id: "ann_3",
+      title: "InnoByte 2026 - Annual National Hackathon Registrations",
+      category: "Events",
+      priority: "Normal",
+      date: "2026-11-18",
+      author: "Student Innovation Council",
+      department: "All Departments",
+      content: "Registrations are now live for the 36-hour flagship hackathon InnoByte 2026 with prize pools over $15,000. Tracks include AI/ML, Web3 & FinTech, Healthcare, and Sustainable Tech. Form teams of 3 to 4 members.",
+      attachment: "Hackathon_Rules_Guide.pdf"
+    },
+    {
+      id: "ann_4",
+      title: "Semester Fee Payment Deadline Extension",
+      category: "College",
+      priority: "Important",
+      date: "2026-11-15",
+      author: "Finance & Accounts Office",
+      department: "All Departments",
+      content: "The last date for payment of tuition and lab fees for Semester 5 without late penalty has been extended to November 30, 2026. Students can pay directly via the Fee Management portal with instant receipt generation.",
+      attachment: "Fee_Notice_Nov2026.pdf"
+    }
+  ],
+
+  // Fee Structure & History
+  fees: {
+    "STU2022001": {
+      currentSemester: {
+        semester: "Semester 5 (2024-2025)",
+        totalAmount: 4500,
+        paidAmount: 3000,
+        pendingAmount: 1500,
+        dueDate: "2026-11-30",
+        status: "Partial",
+        breakdown: [
+          { item: "Tuition Fee", amount: 3200, status: "Paid ($3,000) / Balance ($200)" },
+          { item: "Laboratory & Technology Fee", amount: 650, status: "Pending ($650)" },
+          { item: "Library & Digital Resources Fee", amount: 350, status: "Pending ($350)" },
+          { item: "Examination & Assessment Fee", amount: 300, status: "Pending ($300)" }
+        ]
+      },
+      paymentHistory: [
+        {
+          id: "RCPT-2026-5821",
+          transactionId: "TXN9842187654",
+          date: "2026-08-15",
+          semester: "Semester 5",
+          amount: 3000,
+          paymentMethod: "Credit Card (Visa ending in 4242)",
+          status: "Success",
+          receiptNo: "APEX-2026-S5-042",
+          description: "Semester 5 Initial Tuition Installment"
+        },
+        {
+          id: "RCPT-2026-3190",
+          transactionId: "TXN7423981102",
+          date: "2026-01-10",
+          semester: "Semester 4",
+          amount: 4400,
+          paymentMethod: "Net Banking (JPMorgan Chase)",
+          status: "Success",
+          receiptNo: "APEX-2026-S4-042",
+          description: "Semester 4 Full Fee Clearance"
+        },
+        {
+          id: "RCPT-2025-8812",
+          transactionId: "TXN5512093847",
+          date: "2025-08-12",
+          semester: "Semester 3",
+          amount: 4400,
+          paymentMethod: "Debit Card (Mastercard ending in 1109)",
+          status: "Success",
+          receiptNo: "APEX-2025-S3-042",
+          description: "Semester 3 Full Fee Clearance"
+        }
+      ]
+    }
+  },
+
+  // Study Materials
+  studyMaterials: [
+    {
+      id: "mat_1",
+      courseCode: "CS501",
+      courseName: "Advanced DBMS",
+      title: "Module 3: Query Optimization Algorithms & Cost Estimation",
+      category: "Lecture Notes",
+      fileType: "PDF",
+      fileSize: "4.8 MB",
+      uploadDate: "2026-11-15",
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      downloadsCount: 142,
+      description: "Comprehensive notes on relational algebra transformations, heuristic optimization, cost metrics, and dynamic programming in system R."
+    },
+    {
+      id: "mat_2",
+      courseCode: "CS502",
+      courseName: "Cloud Computing & Microservices",
+      title: "Kubernetes Architecture & Ingress Controller Configuration",
+      category: "Lab Manual",
+      fileType: "PDF",
+      fileSize: "6.2 MB",
+      uploadDate: "2026-11-12",
+      facultyName: "Prof. David Chen",
+      facultyId: "FAC102",
+      downloadsCount: 188,
+      description: "Step-by-step practical laboratory manual for setting up Minikube, ingress routing, ConfigMaps, Secrets, and persistent volume claims."
+    },
+    {
+      id: "mat_3",
+      courseCode: "CS503",
+      courseName: "Artificial Intelligence & ML",
+      title: "Deep Neural Networks, Activation Functions & Optimizers",
+      category: "Lecture Notes",
+      fileType: "PDF",
+      fileSize: "5.4 MB",
+      uploadDate: "2026-11-08",
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      downloadsCount: 215,
+      description: "Detailed mathematical derivations of SGD, Momentum, RMSprop, Adam, and backpropagation gradient flow."
+    },
+    {
+      id: "mat_4",
+      courseCode: "CS504",
+      courseName: "Computer Networks & Security",
+      title: "Cryptography: Public Key Infrastructures & RSA Algorithm",
+      category: "Lecture Notes",
+      fileType: "PDF",
+      fileSize: "3.7 MB",
+      uploadDate: "2026-11-04",
+      facultyName: "Prof. David Chen",
+      facultyId: "FAC102",
+      downloadsCount: 164,
+      description: "Number theory background, modular arithmetic, RSA key generation, proof of correctness, and digital signatures."
+    },
+    {
+      id: "mat_5",
+      courseCode: "CS501",
+      courseName: "Advanced DBMS",
+      title: "Previous Year University Question Papers (2022 - 2025)",
+      category: "Previous Year Papers",
+      fileType: "ZIP / PDF",
+      fileSize: "12.5 MB",
+      uploadDate: "2026-10-28",
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      downloadsCount: 310,
+      description: "Solved questions and marking schemes for the past 4 university end-semester examinations."
+    },
+    {
+      id: "mat_6",
+      courseCode: "CS506",
+      courseName: "Cloud & AI Lab",
+      title: "TensorFlow & PyTorch Setup Guide and Benchmark Datasets",
+      category: "Lab Manual",
+      fileType: "PDF",
+      fileSize: "2.9 MB",
+      uploadDate: "2026-10-20",
+      facultyName: "Dr. Sarah Jenkins",
+      facultyId: "FAC101",
+      downloadsCount: 175,
+      description: "Laboratory exercise sheet for CIFAR-10 image classification, transfer learning with ResNet, and confusion matrix visualization."
+    }
+  ],
+
+  // Messages between students and faculty
+  messages: [
+    {
+      id: "msg_1",
+      studentId: "STU2022001",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      sender: "faculty",
+      timestamp: "2026-11-21T10:14:00Z",
+      subject: "Feedback on Database Query Optimization Paper",
+      text: "Hello Alex, I reviewed your indexing case study. Your analysis on composite indexes was very sharp. Are you interested in presenting this at the upcoming student research symposium next month?"
+    },
+    {
+      id: "msg_2",
+      studentId: "STU2022001",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      sender: "student",
+      timestamp: "2026-11-21T11:30:00Z",
+      subject: "Re: Feedback on Database Query Optimization Paper",
+      text: "Thank you so much, Dr. Jenkins! I would be thrilled to present it. Could I drop by during your office hours on Wednesday at 2:30 PM to discuss the presentation slides?"
+    },
+    {
+      id: "msg_3",
+      studentId: "STU2022001",
+      facultyId: "FAC101",
+      facultyName: "Dr. Sarah Jenkins",
+      sender: "faculty",
+      timestamp: "2026-11-21T12:05:00Z",
+      subject: "Re: Feedback on Database Query Optimization Paper",
+      text: "Yes, 2:30 PM Wednesday works perfectly. Please bring a draft of your slide deck or outline. See you then!"
+    },
+    {
+      id: "msg_4",
+      studentId: "STU2022001",
+      facultyId: "FAC102",
+      facultyName: "Prof. David Chen",
+      sender: "student",
+      timestamp: "2026-11-19T16:20:00Z",
+      subject: "Kubernetes Assignment Cluster Configuration Query",
+      text: "Hi Professor Chen, for Assignment 1, should we configure the Ingress controller with TLS certificates or will standard HTTP NodePort be sufficient for evaluation?"
+    },
+    {
+      id: "msg_5",
+      studentId: "STU2022001",
+      facultyId: "FAC102",
+      facultyName: "Prof. David Chen",
+      sender: "faculty",
+      timestamp: "2026-11-19T18:00:00Z",
+      subject: "Re: Kubernetes Assignment Cluster Configuration Query",
+      text: "Standard HTTP ingress is acceptable for base marks, but configuring a self-signed TLS secret earns 2 bonus points on security hardening."
+    }
+  ],
+
+  // Help Desk / Complaints
+  complaints: [
+    {
+      id: "CMP-2026-0042",
+      studentId: "STU2022001",
+      studentName: "Alex Morgan",
+      category: "IT & Network Infrastructure",
+      subject: "WiFi connectivity drops in CS Turing Lab 2",
+      description: "During lab sessions on Friday afternoons, the campus 5GHz Wi-Fi repeatedly disconnects when 30+ students are simultaneously pulling Docker images.",
+      priority: "Medium",
+      status: "In Progress",
+      createdAt: "2026-11-18T09:30:00Z",
+      updatedAt: "2026-11-19T14:00:00Z",
+      adminNotes: "IT Network team has provisioned a secondary Cisco Catalyst AP in Lab 2. Firmware update in progress."
+    },
+    {
+      id: "CMP-2026-0019",
+      studentId: "STU2022001",
+      studentName: "Alex Morgan",
+      category: "Library & Learning Resources",
+      subject: "Request for IEEE Xplore digital library remote proxy access",
+      description: "Need off-campus VPN / Shibboleth authentication credentials for IEEE Xplore access for semester project literature review.",
+      priority: "Low",
+      status: "Resolved",
+      createdAt: "2026-11-05T11:20:00Z",
+      updatedAt: "2026-11-06T10:15:00Z",
+      adminNotes: "Institutional SSO credentials generated and dispatched to student email."
+    }
+  ],
+
+  // Upcoming Examinations
+  examinations: [
+    {
+      id: "exam_1",
+      courseCode: "CS501",
+      courseName: "Advanced Database Management Systems",
+      date: "2026-12-14",
+      time: "09:30 AM - 12:30 PM",
+      hall: "Exam Hall 1 (Ground Floor)",
+      seatNo: "EH1-A42",
+      type: "End-Semester University Exam"
+    },
+    {
+      id: "exam_2",
+      courseCode: "CS502",
+      courseName: "Cloud Computing & Microservices",
+      date: "2026-12-16",
+      time: "09:30 AM - 12:30 PM",
+      hall: "Exam Hall 1 (Ground Floor)",
+      seatNo: "EH1-A42",
+      type: "End-Semester University Exam"
+    },
+    {
+      id: "exam_3",
+      courseCode: "CS503",
+      courseName: "Artificial Intelligence & Machine Learning",
+      date: "2026-12-18",
+      time: "09:30 AM - 12:30 PM",
+      hall: "Exam Hall 2 (First Floor)",
+      seatNo: "EH2-B18",
+      type: "End-Semester University Exam"
+    },
+    {
+      id: "exam_4",
+      courseCode: "CS504",
+      courseName: "Computer Networks & Security",
+      date: "2026-12-21",
+      time: "09:30 AM - 12:30 PM",
+      hall: "Exam Hall 2 (First Floor)",
+      seatNo: "EH2-B18",
+      type: "End-Semester University Exam"
+    },
+    {
+      id: "exam_5",
+      courseCode: "CS505",
+      courseName: "Software Engineering & Agile Methodology",
+      date: "2026-12-23",
+      time: "09:30 AM - 12:30 PM",
+      hall: "Exam Hall 1 (Ground Floor)",
+      seatNo: "EH1-A42",
+      type: "End-Semester University Exam"
+    }
+  ],
+
+  // 1. Digital Library System
+  library: {
+    issuedBooks: [
+      {
+        id: "BK-01",
+        accessionNo: "LIB-CS-2041",
+        title: "Database System Concepts (7th Edition)",
+        author: "Abraham Silberschatz, Henry F. Korth, S. Sudarshan",
+        issuedDate: "2026-11-01",
+        dueDate: "2026-12-01",
+        status: "Issued",
+        fineAmount: 0,
+        cover: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=300&q=80"
+      },
+      {
+        id: "BK-02",
+        accessionNo: "LIB-CS-3810",
+        title: "Designing Data-Intensive Applications",
+        author: "Martin Kleppmann",
+        issuedDate: "2026-11-08",
+        dueDate: "2026-12-08",
+        status: "Issued",
+        fineAmount: 0,
+        cover: "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=300&q=80"
+      },
+      {
+        id: "BK-03",
+        accessionNo: "LIB-CS-1192",
+        title: "Computer Networking: A Top-Down Approach (8th Ed)",
+        author: "James F. Kurose, Keith W. Ross",
+        issuedDate: "2026-10-15",
+        dueDate: "2026-11-28",
+        status: "Renewed",
+        fineAmount: 0,
+        cover: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=300&q=80"
+      }
+    ],
+    catalog: [
+      { id: "CAT-1", title: "Deep Learning", author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville", category: "AI & ML", availableCopies: 5, shelf: "Rack 14-B" },
+      { id: "CAT-2", title: "Clean Code: Agile Software Craftsmanship", author: "Robert C. Martin", category: "Software Engineering", availableCopies: 8, shelf: "Rack 08-C" },
+      { id: "CAT-3", title: "Kubernetes in Action (2nd Edition)", author: "Marko Luksa", category: "Cloud & DevOps", availableCopies: 4, shelf: "Rack 12-A" },
+      { id: "CAT-4", title: "Introduction to Algorithms (CLRS 4th Edition)", author: "Thomas H. Cormen, Charles E. Leiserson", category: "Algorithms", availableCopies: 12, shelf: "Rack 02-A" },
+      { id: "CAT-5", title: "Artificial Intelligence: A Modern Approach", author: "Stuart Russell, Peter Norvig", category: "AI & ML", availableCopies: 7, shelf: "Rack 14-A" }
+    ]
+  },
+
+  // 2. Hostel & Campus Transport
+  hostelTransport: {
+    hostel: {
+      allocated: true,
+      blockName: "Block B (Aryabhata Residence Hall)",
+      roomNumber: "Room 304 (3rd Floor)",
+      roomType: "Double Sharing AC",
+      roommate: "Kevin Zhao (3rd Year CSE)",
+      wardenName: "Dr. Gregory Miller",
+      wardenPhone: "+1 (555) 432-8899",
+      messName: "Central Dining Hall A",
+      mealPlan: "Full 7-Day All-Access Campus Meal Plan",
+      laundrySlot: "Wednesday 04:00 PM - 06:00 PM"
+    },
+    gatePasses: [
+      {
+        id: "GP-2026-1082",
+        type: "Weekend Day Outing",
+        date: "2026-11-22",
+        outTime: "10:00 AM",
+        inTime: "07:30 PM",
+        reason: "IEEE Student Workshop & Project Team Meet",
+        status: "Approved",
+        approvedBy: "Warden Dr. Gregory Miller"
+      },
+      {
+        id: "GP-2026-0941",
+        type: "Home Vacation Leave",
+        date: "2026-10-25 to 2026-10-28",
+        outTime: "06:00 AM",
+        inTime: "09:00 PM",
+        reason: "Family Festival & Medical Follow-up",
+        status: "Completed",
+        approvedBy: "Chief Warden Office"
+      }
+    ],
+    transport: {
+      busRoute: "Route 12: Tech Corridor & Downtown Metro Express",
+      busNumber: "APEX-BUS-12",
+      driverName: "Marcus Jenkins",
+      driverPhone: "+1 (555) 789-3321",
+      morningPickup: "07:45 AM (Civic Center Square)",
+      eveningDrop: "05:15 PM (Campus North Gate)",
+      allocatedSeat: "Seat #18"
+    }
+  },
+
+  // 3. Certificates & Official Request Services
+  certificates: [
+    {
+      id: "CERT-2026-001",
+      type: "Bonafide Certificate",
+      purpose: "Passport Application & National Bank Education Verification",
+      requestDate: "2026-11-15",
+      status: "Ready for Download",
+      isDownloadable: true,
+      issuedDate: "2026-11-16",
+      signatory: "Registrar Arthur Sterling"
+    },
+    {
+      id: "CERT-2026-002",
+      type: "Tuition Fee Estimation Certificate",
+      purpose: "Scholarship & Education Loan Disbursement",
+      requestDate: "2026-10-10",
+      status: "Dispatched",
+      isDownloadable: true,
+      issuedDate: "2026-10-11",
+      signatory: "Comptroller of Accounts"
+    },
+    {
+      id: "CERT-2026-003",
+      type: "Medium of Instruction Certificate",
+      purpose: "Higher Education & Graduate Studies Abroad",
+      requestDate: "2026-11-20",
+      status: "In Processing",
+      isDownloadable: false,
+      issuedDate: null,
+      signatory: "Academic Dean"
+    }
+  ],
+
+  // 4. Campus Placements & Internships
+  placements: [
+    {
+      id: "JOB-01",
+      company: "Google",
+      logo: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=200&q=80",
+      role: "Associate Software Engineer (L3)",
+      location: "Mountain View, CA / Hybrid",
+      package: "$145,000 / year + RSUs",
+      type: "Full-Time Placement",
+      cgpaCutoff: 8.5,
+      eligibility: "CSE, ECE, IT with >= 8.5 CGPA and no backlogs",
+      driveDate: "2026-12-12",
+      deadline: "2026-12-05",
+      studentStatus: "Shortlisted for Technical Round 1",
+      rounds: ["Online Assessment", "Coding Round 1", "Systems Design", "Hiring Committee"]
+    },
+    {
+      id: "JOB-02",
+      company: "Microsoft",
+      logo: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80",
+      role: "Cloud Solutions Architect - Azure",
+      location: "Redmond, WA / Remote",
+      package: "$135,000 / year",
+      type: "Full-Time Placement",
+      cgpaCutoff: 8.0,
+      eligibility: "CSE, IT, ECE with >= 8.0 CGPA",
+      driveDate: "2026-12-15",
+      deadline: "2026-12-08",
+      studentStatus: "Applied / Resume Screening",
+      rounds: ["Technical Screening", "Cloud Architecture", "Behavioral"]
+    },
+    {
+      id: "JOB-03",
+      company: "Amazon Web Services (AWS)",
+      logo: "https://images.unsplash.com/photo-1523474253246-64e46d2290c5?auto=format&fit=crop&w=200&q=80",
+      role: "Software Development Engineer (SDE-1)",
+      location: "Seattle, WA",
+      package: "$140,000 / year",
+      type: "Full-Time Placement",
+      cgpaCutoff: 7.5,
+      eligibility: "All Engineering Branches >= 7.5 CGPA",
+      driveDate: "2026-12-19",
+      deadline: "2026-12-10",
+      studentStatus: "Eligible - Open for Application",
+      rounds: ["Online Coding Test", "Live Technical Interview", "Bar Raiser"]
+    },
+    {
+      id: "JOB-04",
+      company: "NVIDIA",
+      logo: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=200&q=80",
+      role: "Deep Learning Systems Research Intern",
+      location: "Santa Clara, CA",
+      package: "$9,200 / month (Summer 2027)",
+      type: "Pre-Placement Internship",
+      cgpaCutoff: 8.5,
+      eligibility: "CSE, AI/ML >= 8.5 CGPA",
+      driveDate: "2027-01-08",
+      deadline: "2026-12-20",
+      studentStatus: "Interview Scheduled (Jan 8)",
+      rounds: ["Algorithm Challenge", "CUDA & GPU Architecture", "Research Discussion"]
+    }
+  ],
+
+  // 5. Course & Faculty Evaluation Survey
+  courseFeedback: [
+    { courseCode: "CS501", courseName: "Advanced DBMS", instructor: "Dr. Sarah Jenkins", submitted: true, rating: 5, comments: "Outstanding depth in transaction isolation and query optimizer indexing." },
+    { courseCode: "CS502", courseName: "Cloud Computing", instructor: "Prof. David Chen", submitted: true, rating: 5, comments: "Hands-on Kubernetes labs are phenomenal and very industry-relevant." },
+    { courseCode: "CS503", courseName: "AI & Machine Learning", instructor: "Dr. Sarah Jenkins", submitted: false, rating: null, comments: "" },
+    { courseCode: "CS504", courseName: "Computer Networks & Security", instructor: "Prof. David Chen", submitted: false, rating: null, comments: "" }
+  ]
+};
